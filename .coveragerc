@@ -1,0 +1,8 @@
+[run]
+omit = ttt/__init__.py,
+       ttt/__main__.py,
+       ttt/__version__.py,
+       ttt/__metadata__.py
+
+[html]
+directory = docs/pytest_cov_report
