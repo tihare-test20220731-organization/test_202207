@@ -39,3 +39,26 @@ class Util:
             lhs = np.array([0, 0, 0])
 
         return lhs - rhs
+
+
+    @staticmethod
+    def mult(
+        lhs: float, rhs: np.ndarray, *args, **kwargs
+    ) -> np.ndarray:
+        """
+        Mult method.
+
+        Args:
+            lhs: coef
+            rhs: right hand side.
+        Returns:
+            multiplied value.
+
+        """
+        if not isinstance(lhs, float):
+            raise Exception()
+
+        if not isinstance(rhs, np.ndarray):
+            raise Exception()
+            
+        return lhs * rhs
