@@ -32,7 +32,7 @@ def main():
     bbb = args.rhs
     ccc = util.add(aaa, bbb)
     ddd = util.sub(aaa, bbb)
-    eee = 3.0
+    eee = 3.
     fff = np.array([1.0, 2.0, 3.0])
     ggg = util.mult(eee, fff)
     print("{} + {} = {}".format(aaa, bbb, ccc))
