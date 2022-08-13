@@ -18,6 +18,14 @@ def test_add(lsh_integer, rsh_integer):
     assert np.allclose(Util.add(lsh_integer, rsh_integer), ans)
 
 
+def test_add2(lsh_integer, rsh_integer):
+    lsh = np.array([1, 1, 1])
+    rsh = np.array([3, 3, 3])
+    ans = np.array([4, 4, 4])
+    # ans = np.array([5, 5, 5])
+    assert np.allclose(Util.add(lsh, rsh), ans)
+
+
 def test_sub(lsh_integer, rsh_integer):
     ans = np.array([-1, -2, -3])
     assert np.allclose(Util.sub(lsh_integer, rsh_integer), ans)
